@@ -33,8 +33,7 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="chat.html"><i class="ti-more"></i>Chat</a></li>
-                    <li><a href="calendar.html"><i class="ti-more"></i>Calendar</a></li>
+                    <li><a href="{{ route('all.brand')}}"><i class="ti-more"></i>All Brand</a></li>
                 </ul>
             </li>
 
