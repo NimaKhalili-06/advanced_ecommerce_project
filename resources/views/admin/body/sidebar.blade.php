@@ -1,3 +1,8 @@
+@php
+    $routeUrl = Request::route()->uri;
+    $routePrefix = Request::route()->action['prefix'];
+@endphp
+
 <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar">
@@ -17,23 +22,23 @@
         <!-- sidebar menu-->
         <ul class="sidebar-menu" data-widget="tree">
 
-            <li>
-                <a href="index.html">
+            <li class="{{ $routeUrl == 'admin/dashboard' ? 'active': ''}}">
+                <a href="{{url('admin/dashboard')}}">
                     <i data-feather="pie-chart"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
-            <li class="treeview">
+            <li class="treeview {{ $routePrefix == '/brand' ? 'active': ''}}">
                 <a href="#">
                     <i data-feather="message-circle"></i>
-                    <span>Application</span>
+                    <span>Brands</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="{{ route('all.brand')}}"><i class="ti-more"></i>All Brand</a></li>
+                <ul class="treeview-menu ">
+                    <li class="{{ $routeUrl == 'brand/view' ? 'active': ''}}"><a href="{{ route('all.brand')}}"><i class="ti-more"></i>All Brand</a></li>
                 </ul>
             </li>
 

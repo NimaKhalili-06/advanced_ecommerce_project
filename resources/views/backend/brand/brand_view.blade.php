@@ -44,22 +44,24 @@
                                     </thead>
                                     <tbody>
                                         @foreach ($brands as $brand)
-                                        
-                                        <tr>
-                                            <td>{{ $brand->brand_name_en}}</td>
-                                            <td>{{ $brand->brand_name_fa}}</td>
-                                            <td><img src="{{ $brand->brand_image}}" style="width: 70px;height: 40px;" alt=""></td>
-                                            <td>
-                                                <a href="" class="btn btn-info">Edit</a>
-                                                <a href="" class="btn btn-danger">Delete</a>{{ $brand->brand_name_en}}
-                                            </td>
-                                            
-                                            
-                                        </tr>
-                                        
+
+                                            <tr>
+                                                <td>{{ $brand->brand_name_en }}</td>
+                                                <td>{{ $brand->brand_name_fa }}</td>
+                                                <td><img src="{{ $brand->brand_image }}" style="width: 70px;height: 40px;"
+                                                        alt=""></td>
+                                                <td>
+                                                    <a href="" class="btn btn-info">Edit</a>
+                                                    <a href=""
+                                                        class="btn btn-danger">Delete</a>{{ $brand->brand_name_en }}
+                                                </td>
+
+
+                                            </tr>
+
                                         @endforeach
                                     </tbody>
-                                    
+
                                 </table>
                             </div>
                         </div>
@@ -67,14 +69,82 @@
                     </div>
                     <!-- /.box -->
 
-                    
+
                     <!-- /.box -->
                 </div>
                 <!-- /.col -->
+                <div class="col-4">
+
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Add Brand</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <form method="POST" action="{{ route('brand.store') }}"
+                                    enctype="multipart/form-data">
+                                    @csrf
+                                    <div class="col-12">
+                                            <div class="row">
+<div class="form-group col-12">
+                                            <h5>Brand Name English <span class="text-danger">*</span></h5>
+                                            <input type="text" name="brnad_name_en" id="current_password" type="password"
+                                                class="form-control "
+                                                data-validation-required-message="This field is required"
+                                                aria-invalid="false">
+                                            @if (session('validate_message'))
+                                                <div class="text-danger">{{ session('validate_message') }}
+                                                </div>
+                                            @endif
+                                            @error('old_password')
+                                                <div class="text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                            <div class="form-group col-12">
+                                                <h5>Brand Name Persian <span class="text-danger">*</span></h5>
+                                                <input type="text" name="brand_name_fa" id="password" type="password"
+                                                    class="form-control "
+                                                    data-validation-required-message="This field is required"
+                                                    aria-invalid="false">
+                                                @error('password')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <h5>Brand Image <span class="text-danger">*</span></h5>
+                                                <input type="file" name="brand_image"
+                                                    id="password_confirmation" type="password" class="form-control "
+                                                    data-validation-required-message="This field is required"
+                                                    aria-invalid="false">
+                                                @error('password_confirmation')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                                <div class="text-xs-right pt-4 ">
+                                                    <button type="submit" class="btn btn-rounded btn-info">Update</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <!-- /.row -->
-        </section>
-        <!-- /.content -->
+            <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+
+
+    <!-- /.box -->
+    </div>
+    </div>
+    <!-- /.row -->
+    </section>
+    <!-- /.content -->
 
     </div>
 
