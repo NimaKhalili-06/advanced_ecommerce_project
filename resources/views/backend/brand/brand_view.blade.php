@@ -24,7 +24,7 @@
         <section class="content">
             <div class="row">
 
-                <div class="col-8">
+                <div class="col-xl-8">
 
                     <div class="box">
                         <div class="box-header with-border">
@@ -48,12 +48,12 @@
                                             <tr>
                                                 <td>{{ $brand->brand_name_en }}</td>
                                                 <td>{{ $brand->brand_name_fa }}</td>
-                                                <td><img src="{{ $brand->brand_image }}" style="width: 70px;height: 40px;"
+                                                <td><img src="{{ asset($brand->brand_image) }}" style="width: 70px;height: 40px;"
                                                         alt=""></td>
                                                 <td>
-                                                    <a href="" class="btn btn-info">Edit</a>
-                                                    <a href=""
-                                                        class="btn btn-danger">Delete</a>{{ $brand->brand_name_en }}
+                                                    <a href="{{ route('brand.edit', ['id'=>$brand->id]) }}" class="btn btn-info">Edit</a>
+                                                    <a href="{{ route('brand.delete',['id' => $brand->id]) }}"
+                                                        class="btn btn-danger">Delete</a>
                                                 </td>
 
 
@@ -73,7 +73,7 @@
                     <!-- /.box -->
                 </div>
                 <!-- /.col -->
-                <div class="col-4">
+                <div class="col-xl-4">
 
                     <div class="box">
                         <div class="box-header with-border">
@@ -82,46 +82,42 @@
                         <!-- /.box-header -->
                         <div class="box-body">
                             <div class="table-responsive">
-                                <form method="POST" action="{{ route('brand.store') }}"
-                                    enctype="multipart/form-data">
+                                <form method="POST" action="{{ route('brand.store') }}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="col-12">
-                                            <div class="row">
-<div class="form-group col-12">
-                                            <h5>Brand Name English <span class="text-danger">*</span></h5>
-                                            <input type="text" name="brnad_name_en" id="current_password" type="password"
-                                                class="form-control "
-                                                data-validation-required-message="This field is required"
-                                                aria-invalid="false">
-                                            @if (session('validate_message'))
-                                                <div class="text-danger">{{ session('validate_message') }}
-                                                </div>
-                                            @endif
-                                            @error('old_password')
-                                                <div class="text-danger">{{ $message }}</div>
-                                            @enderror
-                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-12">
+                                                <h5>Brand Name English <span class="text-danger">*</span></h5>
+                                                <input type="text" name="brand_name_en" id="current_password"
+                                                    type="password" class="form-control "
+                                                    data-validation-required-message="This field is required"
+                                                    aria-invalid="false">
+                                                
+                                                @error('brand_name_en')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
                                             <div class="form-group col-12">
                                                 <h5>Brand Name Persian <span class="text-danger">*</span></h5>
                                                 <input type="text" name="brand_name_fa" id="password" type="password"
                                                     class="form-control "
                                                     data-validation-required-message="This field is required"
                                                     aria-invalid="false">
-                                                @error('password')
+                                                @error('brand_name_fa')
                                                     <div class="text-danger">{{ $message }}</div>
                                                 @enderror
                                             </div>
                                             <div class="form-group col-12">
                                                 <h5>Brand Image <span class="text-danger">*</span></h5>
-                                                <input type="file" name="brand_image"
-                                                    id="password_confirmation" type="password" class="form-control "
+                                                <input type="file" name="brand_image" id="password_confirmation"
+                                                    type="password" class="form-control "
                                                     data-validation-required-message="This field is required"
                                                     aria-invalid="false">
-                                                @error('password_confirmation')
+                                                @error('brand_image')
                                                     <div class="text-danger">{{ $message }}</div>
                                                 @enderror
                                                 <div class="text-xs-right pt-4 ">
-                                                    <button type="submit" class="btn btn-rounded btn-info">Update</button>
+                                                    <input type="submit" class="btn btn-rounded btn-info" value="Add Brand">
                                                 </div>
                                             </div>
                                         </div>

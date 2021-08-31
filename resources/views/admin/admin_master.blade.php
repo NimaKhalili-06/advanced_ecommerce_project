@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('backend/css/vendors_css.css')}}">
 
     <!-- Style-->
-    
+
     <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('backend/css/skin_color.css')}}">
 
@@ -318,13 +318,25 @@
 <script src="{{asset('backend/js/template.js')}}"></script>
 <script src="{{asset('backend/js/pages/dashboard.js')}}"></script>
 @if (session('message'))
-    
-        
+
+
 
 <script>
         Swal.fire(
             "{{session('message')}}",
             'You clicked the button!',
+            'success'
+        )
+</script>
+
+@endif
+@if (session('success'))
+
+
+
+<script>
+        Swal.fire(
+            "{{session('success')}}",
             'success'
         )
 </script>

@@ -9,10 +9,10 @@ class Brand extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'brnad_name_en', 
-        'brnad_name_fa', 
-        'brnad_flug_en', 
-        'brnad_flug_fa', 
-        'brnad_image'
+        'brand_name_en',
+        'brand_name_fa',
+        'brand_slug_en',
+        'brand_slug_fa',
+        'brand_image'
     ];
 }
