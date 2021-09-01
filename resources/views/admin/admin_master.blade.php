@@ -323,8 +323,8 @@
 
 <script>
         Swal.fire(
+            'Success',
             "{{session('message')}}",
-            'You clicked the button!',
             'success'
         )
 </script>
@@ -336,6 +336,7 @@
 
 <script>
         Swal.fire(
+            'Success',
             "{{session('success')}}",
             'success'
         )

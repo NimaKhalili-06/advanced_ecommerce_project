@@ -38,8 +38,8 @@ $routePrefix = Request::route()->action['prefix'];
                     </span>
                 </a>
                 <ul class="treeview-menu ">
-                    <li class="{{ $routeUrl == 'brand/view' ? 'active' : '' }}"><a href="{{ route('all.brand') }}"><i
-                                class="ti-more"></i>All Brand</a></li>
+                    <li class="{{ $routeUrl == 'brand/view' ? 'active' : '' }}"><a
+                            href="{{ route('all.brand') }}"><i class="ti-more"></i>All Brand</a></li>
                 </ul>
             </li>
 
@@ -51,8 +51,13 @@ $routePrefix = Request::route()->action['prefix'];
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="{{ $routeUrl == 'category/view' ? 'active' : '' }}"><a
-                            href="{{ route('all.category') }}"><i class="ti-more"></i>All Category</a></li>
+                    <li class="{{ $routeUrl == 'category/view' ? 'active' : '' }}">
+                        <a href="{{ route('all.category') }}"><i class="ti-more"></i>All Category</a>
+                    </li>
+
+                    <li class="{{ $routeUrl == 'category/sub/view' ? 'active' : '' }}">
+                        <a href="{{ route('all.subcategory') }}"><i class="ti-more"></i>All SubCategory</a>
+                    </li>
                 </ul>
             </li>
 
