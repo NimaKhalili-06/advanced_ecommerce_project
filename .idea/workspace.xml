@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ed290ca-ae15-40a3-a4ac-8e09ff7516c0" name="Changes" comment="">
+    <list default="true" id="7ed290ca-ae15-40a3-a4ac-8e09ff7516c0" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/SubCategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/category_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/category_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/category_view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,12 +158,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -199,6 +200,8 @@
       <workItem from="1630348537877" duration="1693000" />
       <workItem from="1630494305230" duration="16000" />
       <workItem from="1630497057947" duration="67000" />
+      <workItem from="1630519438038" duration="330000" />
+      <workItem from="1630519824656" duration="241000" />
     </task>
     <servers />
   </component>

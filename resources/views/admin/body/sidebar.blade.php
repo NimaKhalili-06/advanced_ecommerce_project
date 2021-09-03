@@ -58,6 +58,9 @@ $routePrefix = Request::route()->action['prefix'];
                     <li class="{{ $routeUrl == 'category/sub/view' ? 'active' : '' }}">
                         <a href="{{ route('all.subcategory') }}"><i class="ti-more"></i>All SubCategory</a>
                     </li>
+                    <li class="{{ $routeUrl == 'category/sub/sub/view' ? 'active' : '' }}">
+                        <a href="{{ route('all.subsubcategory') }}"><i class="ti-more"></i>All Sub->SubCategory</a>
+                    </li>
                 </ul>
             </li>
 
