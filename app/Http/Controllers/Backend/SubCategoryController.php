@@ -62,7 +62,7 @@ class SubCategoryController extends Controller
     public function SubCategoryDelete($id)
     {
         SubCategory::findOrFail($id)->delete();
-        return Redirect()->back()->with('success','SubCategory deleted successfully');
+        return Redirect()->route('manage-product')->with('success','SubCategory deleted successfully');
     }
 
 
@@ -80,6 +80,11 @@ class SubCategoryController extends Controller
     {
         $subCategory = SubCategory::where("category_id",$category_id)->get();
         return json_encode($subCategory);
+    }
+    public function GetSubSubCategoryAjax($subcategory_id)
+    {
+        $subSubCategory = SubSubCategory::where('subcategory_id',$subcategory_id)->get();
+        return json_encode($subSubCategory);
     }
     public function SubSubCategoryStore(Request $request)
     {

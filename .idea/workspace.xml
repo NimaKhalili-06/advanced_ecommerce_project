@@ -5,7 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/SubCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/js/pages/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/js/pages/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/main_master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/main_master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,6 +205,11 @@
       <workItem from="1630497057947" duration="67000" />
       <workItem from="1630519438038" duration="330000" />
       <workItem from="1630519824656" duration="241000" />
+      <workItem from="1630919392696" duration="123000" />
+      <workItem from="1630947260605" duration="1910000" />
+      <workItem from="1631007558967" duration="442000" />
+      <workItem from="1631036746234" duration="97000" />
+      <workItem from="1631200815259" duration="596000" />
     </task>
     <servers />
   </component>

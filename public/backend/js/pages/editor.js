@@ -13,6 +13,8 @@
 	CKEDITOR.replace('editor1')
 	//bootstrap WYSIHTML5 - text editor
 	$('.textarea').wysihtml5();		
-	
+	CKEDITOR.replace('editor2')
+	//bootstrap WYSIHTML5 - text editor
+	$('.textarea').wysihtml5();	
   });
 
