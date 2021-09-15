@@ -107,7 +107,6 @@ class ProductController extends Controller
             "product_color_en" => ['required'],
             "product_color_fa" => ['required'],
             "selling_price" => ['required'],
-            "discount_price" => ['required'],
             "short_descp_en" => ['required'],
             "short_descp_fa" => ['required'],
             "long_descp_en" => ['required'],

@@ -64,7 +64,7 @@ $routePrefix = Request::route()->action['prefix'];
                 </ul>
             </li>
 
-            <li class="treeview {{ $routePrefix == '/products' ? 'active' : '' }}">
+            <li class="treeview {{ $routePrefix == '/product' ? 'active' : '' }}">
                 <a href="#">
                     <i data-feather="file"></i>
                     <span>Products</span>
@@ -77,6 +77,20 @@ $routePrefix = Request::route()->action['prefix'];
                     <li class="{{ $routeUrl == 'product/manage' ? 'active' : '' }}"><a href="{{ route('manage-product') }}"><i class="ti-more"></i>Manage Products</a></li>
                 </ul>
             </li>
+            
+            <li class="treeview {{ $routePrefix == '/slider' ? 'active' : '' }}">
+                <a href="#">
+                    <i data-feather="file"></i>
+                    <span>Sliders</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="{{ $routeUrl == 'slider/manage' ? 'active' : '' }}"><a href="{{ route('manage-slider') }}"><i class="ti-more"></i>Manage Sliders</a></li>
+                </ul>
+            </li>
+            
 
             <li class="header nav-small-cap">User Interface</li>
 
